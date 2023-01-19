@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ADD THIS LINE -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div
+        class="col-10 m-5 p-5 d-flex mx-auto"
+        style="
+          align-items: center;
+          text-align: center;
+          position: relative;
+          justify-content: center;
+          margin: auto;
+          height: 35rem;
+        "
+        id="first-1a"
+      >
+        <p class="fs-1 mt-5 pt-5">
+          <strong style="color: rgb(36, 143, 36)">Did you know?</strong> By
+          determining your foot type and getting the right shoes will keep you
+          safe and making sure your body uses ground reaction forces effectively
+          from each step you take.
+        </p>
+      </div>
+
+      <div
+        class="line d-flex mx-auto"
+        style="height: 2px; background: black; width: 45rem"
+      ></div>
+
+      <div class="container">
+        <p
+          class="fs-2 m-4 p-4 d-flex"
+          style="
+            text-indent: 7rem;
+            height: 35rem;
+            justify-content: center;
+            align-items: center;
+            margin-inline: 2rem;
+          "
+        >
+          <br />
+          Getting the right shoes will support your for all your functional
+          movements.
+        </p>
+      </div>
+
+      <div
+        class="line d-flex mx-auto"
+        style="height: 3px; background: black; width: 45rem"
+      ></div>
+    </div>
+
+    <div
+      class="theFoot m-5 p-5 d-flex"
+      style="
+        height: 35rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+      "
+      >
+      Dive deeply with your foot
+    </div>
+
+    <!-- FOOT TYPES -->
+    <div class="container-fluid pt-5 mt-5" id="footTypes">
+      <div class="container d-flex gap-5" style="justify-content: space-around">
+        <div
+          class="contentright d-flex mx-auto"
+          style="width: 35rem; justify-content: center"
+        >
+          <img src="./img/flat.png" alt="Flat Foot" />
+        </div>
+
+        <div
+          class="contentleft d-flex"
+          style="
+            width: 35rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <p class="fs-3">
+            Your heel cord is curving towards the inside of your ankle (medial).
+            And there’s a small indent on the medial side of your heel.
+            <br />
+            <br />
+            A <strong style="color: rgb(36, 143, 36)">flat foot</strong> means
+            that your foot is more prone to eversion. That means that the arch
+            in your foot is likely to collapse, putting more weight on the
+            medial side of the foot when applying load.
+            <br />
+            <br />
+            The instability of this foot position feeds further instability up
+            the chain. It leads to less power and a host of potential injuries.
+          </p>
+        </div>
+      </div>
+
+      <div class="container d-flex gap-5" style="justify-content: space-around">
+        <div
+          class="contentleft d-flex"
+          style="
+            width: 35rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <p class="fs-3">
+            Your heel cord curves towards the outside of your ankle (lateral).
+            And there’s a small indent on the outer aspect of the heel.
+            <br />
+            <br />
+            Having a
+            <strong style="color: rgb(36, 143, 36)">high arch</strong> means
+            that you tend to put more weight on the outside of your foot
+            (inversion). This creates a rigidity in the STJ.
+            <br />
+            <br />
+            So the ground reaction forces get trapped in the body instead of
+            released into your movement. Again, the result is a limit in your
+            power and a risk increase in impact-related injuries.
+          </p>
+        </div>
+
+        <div
+          class="contentright d-flex mx-auto"
+          style="width: 35rem; justify-content: center"
+        >
+          <img src="./img/high arch.png" alt="High Arch" />
+        </div>
+      </div>
+
+      <div class="container d-flex gap-5" style="justify-content: space-around">
+        <div
+          class="contentright d-flex mx-auto"
+          style="width: 35rem; justify-content: center"
+        >
+          <img src="./img/neutral.png" alt="neutral/normal" />
+        </div>
+
+        <div
+          class="contentleft d-flex"
+          style="
+            width: 35rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <p class="fs-3">
+            Your heel cord forms a straight, vertical line. And there are no
+            concave indents visible on either side of your heel.
+            <br /><br />
+            A
+            <strong style="color: rgb(36, 143, 36)">neutral/normal</strong> foot
+            means that your STJ starts in a centered position… the “sweet spot”.
+            This allows your body to best load and unload ground reaction forces
+            and gravity. So you can harness this free energy into into elastic
+            power to move in any direction. <br /><br />
+            If you’re missing that spring in your step, it may be more likely
+            that you have one of the other two types.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- FOOT TYPES -->
+
+    <div
+      class="line d-flex mx-auto"
+      style="height: 3px; background: black; width: 45rem;
+      margin-top: 5rem;"
+    ></div>
+
+    <div class="container-fluid">
+      <div
+        class="col-10 m-5 p-5 d-flex mx-auto"
+        style="
+          align-items: center;
+          text-align: center;
+          position: relative;
+          justify-content: center;
+          margin: auto;
+          height: 35rem;
+        "
+        id="first-1a"
+      >
+        <p class="fs-2 mt-5 pt-5">
+          <strong style="color: rgb(36, 143, 36)">Know your foot type with these easy steps -</strong> all you
+          need is a camera and someone to snap a photo of your barefoot from
+          behind. Place the camera perpendicular on the ground so it’s level and
+          vertical.
+          <br />
+          <br />
+          Stand with your feet hip distance apart and the heels in a straight
+          line behind the toes and take your photo. Then, examine each foot’s
+          heel cord (Achilles tendon). This is the vertical connective tissue
+          that leads from your heel (calcaneus) into your lower leg.
+        </p>
+      </div>
+    </div>
+
+     <div
+      class="line d-flex mx-auto"
+      style="height: 3px; background: black; width: 45rem;
+      margin-top: 5rem;"
+    ></div>
+
+    <div
+      class="theFoot d-flex"
+      style="
+        height: 35rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+      "
+      >
+      let's get the right shoes for you!
+    </div>
+
+
+    <div class="footselection d-flex mx-auto"
+    style="flex-direction: column;
+    width: 45rem;
+    height: 15rem;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 10rem;
+    ">
+      <button class="btn btn-lg btn-dark fs-1">Flat Foot</button>
+      <button class="btn btn-lg btn-dark fs-1">Neutral Foot</button>
+      <button class="btn btn-lg btn-dark fs-1">High Arch</button>
+    </div>
+
+
+<!-- FOOTER -->
+<div
+      class="section"
+      style="
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #40494a;
+        color: #f4f6f6;
+      "
+    >
+      <h1 class="logo" style="display: flex; justify-content: center">
+        FitSure
+      </h1>
+    </div>
+
+    <div class="footer">
+      <div
+        class="containter pt-3"
+        style="
+          display: flex;
+          flex-direction: row;
+          gap: 5rem;
+          justify-content: center;
+          background-color: #bcc4c5;
+        "
+      >
+        <div class="col-1.2 m-1 p-1">
+          <h6 style="color: black">PRODUCTS</h6>
+          <div class="content">
+            <ul
+              class="container d-block m-0 p-0 fs-6"
+              style="text-align: right"
+            >
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Shoes
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Accessories
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  New Arrivals
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Top Sellers
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Release Dates
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1.2 m-1 p-1">
+          <h6 style="color: black">COMPANY <br> INFO</h6>
+          <div class="content">
+            <ul
+              class="container d-block m-0 p-0 fs-6"
+              style="text-align: right"
+            >
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1.2 m-1 p-1">
+          <h6 style="color: black">SPORTS</h6>
+          <div class="content">
+            <ul
+              class="container d-block m-0 p-0 fs-6"
+              style="text-align: right"
+            >
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Running
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  GYM and Tranining
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Basketball
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Tennis
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Outdoor
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1.2 m-1 p-1">
+          <h6 style="color: black">COLLECTIONS</h6>
+          <div class="content">
+            <ul
+              class="container d-block m-0 p-0 fs-6"
+              style="text-align: right"
+            >
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Ultraboost
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Pureboost
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Stan Smith
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Superstar
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  NMD
+                </a>
+              </li>
+
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  New Balance
+                </a>
+              </li>
+
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Vans
+                </a>
+              </li>
+
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Puma
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Converse
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Reebok
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1.2 m-1 p-1">
+          <h6 style="color: black">SUPPORT</h6>
+          <div class="content">
+            <ul
+              class="container d-block m-0 p-0 fs-6"
+              style="text-align: right"
+            >
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Help
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Store Locator
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Delivery
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Payment
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Returns & Refunds
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Promotions
+                </a>
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  font-family: 'Space Grotesk', sans-serif;
+                  margin: 0;
+                  font-size: small;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex text-align-right fw-light text-black"
+                >
+                  Sitemap
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1.2 m-1 p-1">
+          <h6 style="color: black">FOLLOW US</h6>
+          <div class="content">
+            <ul class="container d-block m-0 p-0" style="text-align: right">
+              <li style="list-style: none; margin: 0">
+                <a href="#">
+                  <img
+                    src="./social media/facebook.svg"
+                    alt="Facebook"
+                    style="width: 1.5rem; display: flex; margin-bottom: 0.8rem"
+                  />
+                </a>
+              </li>
+              <li style="list-style: none; margin: 0">
+                <a href="#">
+                  <img
+                    src="./social media/instagram.svg"
+                    alt="Instagram"
+                    style="width: 1.5rem; display: flex; margin-bottom: 0.8rem"
+                  />
+                </a>
+              </li>
+              <li style="list-style: none; margin: 0">
+                <a href="#">
+                  <img
+                    src="./social media/tiktok.svg"
+                    alt="Tiktok"
+                    style="width: 1.5rem; display: flex; margin-bottom: 0.8rem"
+                  />
+                </a>
+              </li>
+              <li style="list-style: none; margin: 0">
+                <a href="#">
+                  <img
+                    src="./social media/pinterest.svg"
+                    alt="Pinterest"
+                    style="width: 1.5rem; display: flex; margin-bottom: 0.8rem"
+                  />
+                </a>
+              </li>
+
+              <li style="list-style: none; margin: 0">
+                <a href="#">
+                  <img
+                    src="./social media/twitter.svg"
+                    alt="Twitter"
+                    style="width: 1.5rem; display: flex; margin-bottom: 0.8rem"
+                  />
+                </a>
+              </li>
+              <li style="list-style: none; margin: 0">
+                <a href="#">
+                  <img
+                    src="./social media/youtube.svg"
+                    alt="Youtube"
+                    style="width: 1.5rem; display: flex; margin-bottom: 0.8rem"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
