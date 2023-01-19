@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSure</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- for payment -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- payment readbility -->
+    <!-- font -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <a class="navbar-brand" href="#"><img src="fitsure.png" alt=""></a> -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="prod.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="fitsure.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="men.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="../women/women.html">Women</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kids
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html">Puma</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Accessories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html">Puma</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Brands
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html">Puma</a></li>
+              <li><a class="dropdown-item" href="#">Vans</a></li>
+              <li><a class="dropdown-item" href="#">Adidas</a></li>
+              <li><a class="dropdown-item" href="#">Converse</a></li>
+              <li><a class="dropdown-item" href="#">New Balance</a></li>
+              <li><a class="dropdown-item" href="#">Jordan</a></li>
+              <li><a class="dropdown-item" href="#">Capital</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <ul class="navbar-nav topper-nav">
+            <div class="icon-cont" id="cart-icon"><i class='bx bx-cart' ></i>Cart</div>
+            <div class="icon-cont"><i class='bx bx-heart' ></i>Favorites</div> 
+            <div class="icon-cont"><i class='bx bx-user' data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>Login</div>            
+          </ul>
+        </form>
+      </div>
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+          <div class="cart-box">
+              <img class="cart-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/DJ6014-004_1512x.jpg?v=1667544577" alt="">
+            <div class="detail-box">
+              <h6 class="cart-product-title">Kyrie Low 5 EP</h6>
+              <div class="cart-price">₱7119</div>
+              <input type="number" value="1" class="cart-quantity">
+
+              <!-- remove cart -->
+              
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash cart-remove" viewBox="0 0 16 16">
+              <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+              <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+            </svg>
+          </div>
+         
+        </div>
+        <div class="total">
+          <div class="total-title">Total:</div>
+          <div class="total-price">₱0</div>
+        </div>
+        <button class="btn btn-buy">Buy Now</button>
+        <i class='bx bx-x' id="close-cart"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="container checkout-con">
+    <div class="checkout-details-box">
+      <div class="product-part">
+        <div class="checkout-img">
+          <img class=""src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/VN000D3HY28_800x.jpg?v=1670318897" alt="">
+          <p class="quantity-number">1</p>
+        </div>
+        
+
+        <div class="product-text">
+          <h5 class="checkout-name">Old skool</h5>
+          <p class="checkout-price">₱1,395.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider-checkout"></div>
+    <div class="discount-box">
+      <input type="text" placeholder="type discount code">
+      <button class="btn">Apply</button>
+    </div>
+    <div class="divider-checkout"></div>
+    <div class="total-box">
+      <h5>Total:</h5>
+      <h5>₱1,395.00</h5>
+    </div>
+    <div class="divider-checkout"></div>
+    <div class="goback-btn"><a href="#"><i class='bx bx-arrow-back'></i>Go back shopping</a></div>
+  </div>
+  
+  <div class="container padding-con">
+    
+    <form action="">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="title">billing address</h3>
+                <div class="inputBox">
+                    <span>full name:</span>
+                    <input type="text" placeholder="ex. Juan Dela Cruz">
+                </div>
+                <div class="inputBox">
+                    <span>email:</span>
+                    <input type="text" placeholder="info@yourmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address:</span>
+                    <input type="text" placeholder="house number street municipality">
+                </div>
+                <div class="inputBox">
+                    <span>city:</span>
+                    <input type="text" placeholder="Manila">
+                </div>
+                <div class="d-flex">
+                    <div class="inputBox">
+                        <span>state:</span>
+                        <input type="text" placeholder="Full Name ex. Juan Dela Cruz">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code:</span>
+                        <input type="text" placeholder="4111">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="title">Payment</h3>
+                <div class="inputBox">
+                    <span>cards accepted  :</span>
+                    <img src="img/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card:</span>
+                    <input type="text" placeholder="Juan C.">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number:</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month:</span>
+                    <input type="text" placeholder="January">
+                </div>
+                <div class="d-flex">
+                    <div class="inputBox">
+                        <span>exp year:</span>
+                        <input type="text" placeholder="2000">
+                    </div>
+                    <div class="inputBox">
+                        <span>cvv:</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value = "proceed to checkout" class="checkout">
+    </form>
+  </div>
+  <section id="newsletter">
+    <div class="container">
+      <div class="newstext">
+        <h4>Sign up for Newsletter</h4>
+        <p>Get updates on latest <span class="span-p">special offers</span></p>
+      </div>
+      <div class="input-group mb-3 ">
+        <input type="text" class="form-control no-border-radius text-light" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">SEND</span>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section id="footer">
+
+    <div class="footer desktop-view">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Products</h6>
+            <ul>
+              <li><a href="#">Shoes</a> </li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Top Sellers</a></li>
+              <li><a href="#">Release Dates</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Company Info</h6>
+            <ul>
+              <li><a href="aboutus.html">About Us</a> </li>
+              
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Sports</h6>
+            <ul>
+              <li><a href="#">Running</a> </li>
+              <li><a href="#">Gym and Training</a></li>
+              <li><a href="#">Basketball</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Outdoor</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>COLLECTIONS</h6>
+            <ul>
+              <li><a href="#">Ultraboost</a> </li>
+              <li><a href="#">Pureboost</a></li>
+              <li><a href="#">Stan Smith</a></li>
+              <li><a href="#">Superstar</a></li>
+              <li><a href="#">NMD</a></li>
+              <li><a href="#">New Balance</a></li>
+              <li><a href="#">Vans</a></li>
+              <li><a href="#">Puma</a></li>
+              <li><a href="#">Converse</a></li>
+              <li><a href="#">Reebok</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Support</h6>
+            <ul>
+              <li><a href="#">Help</a> </li>
+              <li><a href="#">Store Locator</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Payment</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Products</h6>
+            <ul>
+              <li><a target="_blank"href="#">
+                <img
+                  src="./social media/facebook.svg"
+                  alt="Facebook"
+                  
+                />
+              </a> </li>
+              <li><a target="_blank"href="#">
+                <img
+                  src="./social media/instagram.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a target="_blank"href="#">
+                <img
+                  src="./social media/tiktok.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a target="_blank"href="#">
+                <img
+                  src="./social media/pinterest.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a target="_blank" href="#">
+                <img
+                  src="./social media/twitter.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a target="_blank" href="https://www.youtube.com/">
+                <img
+                  src="./social media/youtube.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+            </ul>
+          </div> 
+        </div>
+      </div>      
+    </div>
+    
+  </section>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="login-box modal-content">
+          <i class='bx bx-x' data-bs-dismiss="modal" aria-label="Close"></i>
+          <h2>Login</h2>
+          <form>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Username</label>
+            </div>
+            <div class="user-box">
+              <input type="password" name="" required="">
+              <label>Password</label>
+            </div>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Log In
+            </a>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div> -->
+    </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

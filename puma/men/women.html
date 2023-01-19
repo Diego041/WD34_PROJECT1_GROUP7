@@ -1,0 +1,3579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSure</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <a class="navbar-brand" href="#"><img src="fitsure.png" alt=""></a> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prod.css">
+  <body> 
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="fitsure.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="men.html">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="women.html">Women</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kids
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="men.html">Puma</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accessories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="men.html">Puma</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Brands
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="men.html">Puma</a></li>
+                <li><a class="dropdown-item" href="#">Vans</a></li>
+                <li><a class="dropdown-item" href="#">Adidas</a></li>
+                <li><a class="dropdown-item" href="#">Converse</a></li>
+                <li><a class="dropdown-item" href="#">New Balance</a></li>
+                <li><a class="dropdown-item" href="#">Jordan</a></li>
+                <li><a class="dropdown-item" href="#">Capital</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav topper-nav">
+              <div class="icon-cont" id="cart-icon"><i class='bx bx-cart' ></i>Cart</div>     
+              <div class="icon-cont"data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class='bx bx-user'></i>Login</div>     
+            </ul>
+          </form>
+        </div>
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content">
+            <div class="cart-box">
+                <img class="cart-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/DJ6014-004_1512x.jpg?v=1667544577" alt="">
+              <div class="detail-box">
+                <h6 class="cart-product-title">Kyrie Low 5 EP</h6>
+                <div class="cart-price">₱7119</div>
+                <input type="number" value="1" class="cart-quantity">
+  
+                <!-- remove cart -->
+                
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash cart-remove" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg>
+            </div>
+           
+          </div>
+          <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">₱0</div>
+          </div>
+          <button class="btn btn-buy"onclick="window.location.href='checkout.html'">Checkout Now</button>
+          <i class='bx bx-x' id="close-cart"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- end of Navbar -->
+    
+    <section id="puma-women">
+      
+      <div class="container position-relative">
+        <h2 class="section-title"><span>Men's Collection</span></h2>
+        <div class="divider"></div>
+      </div> 
+        <div class="container w-100" style="gap: 1rem">
+          <div class="col m-0 p-0 pt-3" id="legend">
+            <div class="menu" style="height: 100%">
+              <ul style="list-style-type: none; margin: 1rem; padding: 0.25rem">
+                <li
+                  class="p-1"
+                  style="
+                    background-color: var(--bg-nav);
+                    color: var(--text1);
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                      0 1px 2px rgba(0, 0, 0, 0.24);
+                    font-weight: 700;
+                  "
+                >
+                  Gender:
+                </li>
+                <div class="option" id="gender">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark m-1 p-1 btn-sm"
+                    style="font-size: medium"
+                  >
+                    <a
+                      href="../men/men.html"
+                      style="text-decoration: none; color: #40494a"
+                      >Men</a
+                    >
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark m-1 p-1 btn-sm"
+                    style="font-size: medium"
+                  >
+                    <a
+                      href="../women/women.html"
+                      style="text-decoration: none; color: #40494a"
+                      >Women</a
+                    >
+                  </button>
+                </div>
+                <li
+                  class="p-1"
+                  style="
+                    background-color: var(--bg-nav);
+                    color: var(--text1);
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                      0 1px 2px rgba(0, 0, 0, 0.24);
+                    font-weight: 700;
+                  "
+                >
+                  Brand:
+                </li>
+                <div class="option mt-2 mb-2">
+                  <div class="input-group mt-2 mb-2">
+                    <!-- the value on the placeholder will add effect to the textarea -->
+                    <label for="floatingName">Search by Brand:</label>
+                  </div>
+
+                  <form class="form-floating d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search Brands:"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-dark" type="submit">
+                      <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                      <lord-icon
+                        src="https://cdn.lordicon.com/rlizirgt.json"
+                        trigger="hover"
+                        colors="primary:#79817f"
+                        style="width: 40px; height: 40px"
+                      >
+                      </lord-icon>
+                    </button>
+                  </form>
+                </div>
+                <li
+                  class="p-1"
+                  style="
+                    background-color: var(--bg-nav);
+                    color: var(--text1);
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                      0 1px 2px rgba(0, 0, 0, 0.24);
+                    font-weight: 700;
+                  "
+                >
+                  Size:
+                </li>
+                <div class="option mt-2 mb-2">
+                  <div class="input-group mt-2 mb-2">
+                    <!-- the value on the placeholder will add effect to the textarea -->
+                    <label for="floatingName">Search by size:</label>
+                  </div>
+
+                  <form class="form-floating d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search Brands:"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-dark" type="submit">
+                      <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                      <lord-icon
+                        src="https://cdn.lordicon.com/rlizirgt.json"
+                        trigger="hover"
+                        colors="primary:#79817f"
+                        style="width: 40px; height: 40px"
+                      >
+                      </lord-icon>
+                    </button>
+                  </form>
+                </div>
+              </ul>
+            </div>
+          </div>
+    </section>
+
+      <!-- PARENT ELEMENT FOR THE SHOE LIST -->
+
+      <div class="row d-flex justify-content-around m-3">
+        <!-- start of the first row -->
+        <!-- item 1 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark1"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="imgwomen/puma1/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="imgwomen/puma1/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma1/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma1/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">SUEDE CLASSIC XXI</p>
+                <h5 class="card-title text-dark fw-bold">₱ 4,790.00</h5>
+                <h6>SKU: 374915-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 1 -->
+
+        <!-- item 2 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark2"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="imgwomen/puma2/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="imgwomen/puma2/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma2/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma2/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">CLYDE ALL PRO</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,950.00</h5>
+                <h6>SKU: 195509-02</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 2 -->
+
+        <!-- item 3 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark3"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark3"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark3"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark3"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark3"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="imgwomen/puma3/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="imgwomen/puma3/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma3/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma3/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">CLYDE ALL PRO</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,950.00</h5>
+                <h6>SKU: 195509-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 3 -->
+
+        <!-- item 4 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark4"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark4"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark4"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark4"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark4"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma4/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma4/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma4/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma4/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">COURT RIDER 2.0</p>
+                <h5 class="card-title text-dark fw-bold">₱ 4,790.00</h5>
+                <h6>SKU: 195660-03</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 4 -->
+        <!-- end of the first row -->
+
+        <!-- start of the second row -->
+
+        <!-- item 5 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark5"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma6/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma6/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma6/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma6/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">RS-X3 PLASTIC JRS</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,630.00</h5>
+                <h6>SKU: 371569-05</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of time 5 -->
+
+        <!-- item 6 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark6"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma5/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma5/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma5/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma5/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">COURT RIDER POP</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,950.00</h5>
+                <h6>SKU: 376107-02</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 6-->
+
+        <!-- item 7 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark7"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark7"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark7"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark7"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark7"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma7/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma7/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma7/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma7/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">ROMA KITSUN</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,530.00</h5>
+                <h6>SKU: 380223-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 7 -->
+
+        <!-- item 8 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark8"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark8"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark8"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark8"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark8"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma8/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma8/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma8/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma8/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">RS-2K HF THE HUNDREDS</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,950.00</h5>
+                <h6>SKU: 373724-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 8 -->
+        <!-- end of the second row -->
+
+        <!-- start of the third row -->
+
+        <!-- item 9 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark9"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark9"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark9"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark9"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark9"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma9/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma9/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma9/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma9/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">SUEDE ROMERO BRITTO</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,790.00</h5>
+                <h6>SKU: 381095-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 9 -->
+
+        <!-- item10 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark10"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark10"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark10"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark10"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark10"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma10/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma10/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma10/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma10/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">FUTURE RIDER X AKA BOKU/p></p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,310.00</h5>
+                <h6>SKU: 380169-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 10 -->
+
+        <!-- item 11 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark11"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark11"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark11"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark11"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark11"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma11/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma11/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma11/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma11/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">RS-X³ WH</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,630.00</h5>
+                <h6>SKU: 373308-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 11 -->
+
+        <!-- item 12 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark12"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark12"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark12"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark12"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark12"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="imgwomen/puma1/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="imgwomen/puma1/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma1/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imgwomen/puma1/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">BASKET CLASSIC XXI</p>
+                <h5 class="card-title text-dark fw-bold">₱ 4,870.00</h5>
+                <h6>SKU: 374923-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 12 -->
+        <!-- end of the fourth row -->
+
+        <!-- start of the fifth row -->
+
+        <!-- item 13 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark13"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark13"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark13"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark13"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark13"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma13/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma13/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma13/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma13/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">SUEDE CLASSIC XXI</p>
+                <h5 class="card-title text-dark fw-bold">₱ 4,790.00</h5>
+                <h6>SKU: 374915-04</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 13 -->
+
+        <!-- item 14 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark14"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark14"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark14"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark14"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark14"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma14/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma14/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma14/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma14/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">SUEDE CLASSIC+</p>
+                <h5 class="card-title text-dark fw-bold">₱ 3,990.00</h5>
+                <h6>SKU: 352634-03</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 14 -->
+
+        <!-- item 15 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark15"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark15"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark15"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark15"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark15"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma15/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma15/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma15/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma15/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">MNW MMS X-RAY</p>
+                <h5 class="card-title text-dark fw-bold">₱ 4,550.00</h5>
+                <h6>SKU: 306503-02</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 15 -->
+
+        <!-- item 16 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark16"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark16"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark16"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark16"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark16"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma16/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma16/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma16/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma16/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">WILD RIDER ANIMAL CROSSING</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,950.00</h5>
+                <h6>SKU: 382961-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 16 -->
+
+        <!-- item 17 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark17"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark17"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark17"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark17"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark17"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma17/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma17/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma17/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma17/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">TRIPLE</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,230.00</h5>
+                <h6>SKU: 195217-06</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 17 -->
+
+        <!-- item 18 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark18"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark18"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark18"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark18"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark18"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma18/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma18/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma18/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma18/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">RS-2K INTERNET EXPLORING</p>
+                <h5 class="card-title text-dark fw-bold">₱ 6,630.00</h5>
+                <h6>SKU: 373309-06</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 18 -->
+
+        <!-- item 19 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark19"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark19"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark19"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark19"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark19"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma19/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma19/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma19/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma19/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">FUTURE RIDER WH</p>
+                <h5 class="card-title text-dark fw-bold">₱ 4,870.00</h5>
+                <h6>SKU: 373384-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item 19 -->
+
+        <!-- item 20 -->
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="card" style="width: 18rem">
+              <div
+                id="carouselExampleDark20"
+                class="carousel carousel-dark carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark20"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark20"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark20"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark20"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="../men/img/puma20/1.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="../men/img/puma20/2.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma20/3.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../men/img/puma20/4.png"
+                      class="d-block w-100"
+                      alt="Your favorite shoe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold">PUMA</h5>
+                <p class="card-text fw-bold">RS-X DECOR8</p>
+                <h5 class="card-title text-dark fw-bold">₱ 7,030.00</h5>
+                <h6>SKU: 380573-01</h6>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">US 8</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 8.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">US 9</button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 9.5
+                  </button>
+                </div>
+                <div
+                  class="container d-flex justify-content-evenly m-0 p-1"
+                  style="font-size: 13px"
+                >
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 10.5
+                  </button>
+                  <button class="btn btn-sm btn-outline-dark szes">
+                    US 11.5
+                  </button>
+                </div>
+
+                <div
+                  class="qty-selection d-flex justify-content-evenly m-3 text-dark fw-bold"
+                >
+                  <p>Quantity:</p>
+                  <a
+                    class="down quantity-control-down"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >-</a
+                  >
+                  <input
+                    min="1"
+                    type="text"
+                    class="quantity"
+                    value="0"
+                    style="width: 40px"
+                  />
+
+                  <a
+                    class="up quantity-control-up"
+                    field="quantity"
+                    style="
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 25px;
+                    "
+                    type="button"
+                    >+</a
+                  >
+                </div>
+
+                <!-- start of toast notification -->
+                <button type="button" class="btn AddTo-cart" id="liveToastBtn">
+                  Add to cart
+                </button>
+
+                <!-- end of toast notification -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of the fifth row -->
+      </div>
+    </div>
+    <div class="container position-relative">
+      <h2 class="section-title"><span>Other Items You might Like</span></h2>
+      <div class="divider"></div>
+    </div> 
+    <section id="related">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper" >
+              <div class="card swiper-slide" onclick="window.location.href='productdetails.html'">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/HQ6642-642_360x.jpg?v=1670923946" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/DJ6014-400_1512x.jpg?v=1666599340" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">KYRIE LOW 5 EP</p>
+                  <h5 class="card-title text-dark fw-light">₱ 6,195.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/WL574EVB-001_720x.jpg?v=1672301040" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/WL574EVW-590_720x.jpg?v=1672301043" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/FD4342-181_720x.jpg?v=1672301007" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/FD0357-247_720x.jpg?v=1672301001" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/DJ6149-004_720x.jpg?v=1672300982" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/HQ6642-642_360x.jpg?v=1670923946" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0562/8631/4662/products/HQ6642-642_360x.jpg?v=1670923946" alt="">                      
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="card-text fw-bold">STAN SMITH W</p>
+                  <h5 class="card-title text-dark fw-light">₱ 4,790.00</h5>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+  
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="container">
+        <div class="newstext">
+          <h4>Sign up for Newsletter</h4>
+          <p>Get updates on latest <span class="span-p">special offers</span></p>
+        </div>
+        <div class="input-group mb-3 ">
+          <input type="text" class="form-control no-border-radius text-light" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">SEND</span>
+        </div>
+      </div>
+    </section>
+<section id="footer">
+  <section id="footer">
+
+    <div class="footer desktop-view">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Products</h6>
+            <ul>
+              <li><a href="#">Shoes</a> </li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Top Sellers</a></li>
+              <li><a href="#">Release Dates</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Company Info</h6>
+            <ul>
+              <li><a href="aboutus.html">About Us</a> </li>
+              
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Sports</h6>
+            <ul>
+              <li><a href="#">Running</a> </li>
+              <li><a href="#">Gym and Training</a></li>
+              <li><a href="#">Basketball</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Outdoor</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>COLLECTIONS</h6>
+            <ul>
+              <li><a href="#">Ultraboost</a> </li>
+              <li><a href="#">Pureboost</a></li>
+              <li><a href="#">Stan Smith</a></li>
+              <li><a href="#">Superstar</a></li>
+              <li><a href="#">NMD</a></li>
+              <li><a href="#">New Balance</a></li>
+              <li><a href="#">Vans</a></li>
+              <li><a href="#">Puma</a></li>
+              <li><a href="#">Converse</a></li>
+              <li><a href="#">Reebok</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Support</h6>
+            <ul>
+              <li><a href="#">Help</a> </li>
+              <li><a href="#">Store Locator</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Payment</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+            <h6>Products</h6>
+            <ul>
+              <li><a href="#">
+                <img
+                  src="./social media/facebook.svg"
+                  alt="Facebook"
+                  
+                />
+              </a> </li>
+              <li><a href="#">
+                <img
+                  src="./social media/instagram.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a href="#">
+                <img
+                  src="./social media/tiktok.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a href="#">
+                <img
+                  src="./social media/pinterest.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a href="#">
+                <img
+                  src="./social media/twitter.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+              <li><a href="#">
+                <img
+                  src="./social media/youtube.svg"
+                  alt="Facebook"
+                  
+                />
+              </a></li>
+            </ul>
+          </div> 
+        </div>
+      </div>      
+    </div>
+    
+  </section>
+    
+  
+</section>
+
+<section>
+  <div class="mobile-view">
+    <div class="container-fluid">
+
+        <div class="footer-wrapper">
+          <div class="footer-link-container">
+            <ul class="footer-links-1">
+              <li class="footer-link" ><a class="footer-link-item"href="#">Products</a></li>
+              <li class="footer-link"><a class="footer-link-item"href="#">Company Information</a></li>
+              <li class="footer-link"><a class="footer-link-item"href="#">SPORTS</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-container">
+            <ul class="footer-links-2">
+              <li class="footer-link" ><a class="footer-link-item"href="#">Collection</a></li>
+              <li class="footer-link"><a class="footer-link-item"href="#">Support</a></li>
+              <li class="footer-link"><a class="footer-link-item"href="#">Follow Us</a></li>
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+    
+  </div>
+  <div class="lower-footer">
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms and Conditions</a></li>
+      <li><a href="#">© 2020 Fit-Sure</a></li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- start of toast notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <h1>Success!</h1>
+          <strong class="me-auto"></strong>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body text-light bg-dark opacity-60 rounded box-shadow">
+          Your shoes are now in your cart. Please continue shopping.
+        </div>
+      </div>
+    </div>
+    <!-- start of toast notification -->
+
+
+
+    <!-- JS -->
+
+    <script>
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastLiveExample = document.getElementById("liveToast");
+      if (toastTrigger) {
+        toastTrigger.addEventListener("click", () => {
+          const toast = new bootstrap.Toast(toastLiveExample);
+
+          toast.show();
+        });
+      }
+    </script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
