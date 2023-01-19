@@ -80,25 +80,14 @@ var swiper = new Swiper(".slide-content", {
   function updateTotal(){
     let cartContent = document.getElementsByClassName('cart-content')[0];
     let cartBoxes = cart.getElementsByClassName('cart-box');
-    let total = document.getElementById("total");
-    // var total = 0;
+    var total = 0;
     for(var i= 0; i <cartBoxes.length; i++){
       var cartBox = cartBoxes[i];
       var priceElement = cartBox.getElementsByClassName('cart-price')[0];
       var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
-      // var price = parseFloat(priceElement.innerText.replace("₱",""));
+      var price = parseFloat(priceElement.innerText.replace("₱",""));
       var quantity = quantityElement.value;
-      total =(price * quantity);
+      total = total +(price * quantity);
       document.getElementsByClassName("total-price")[0].innerText= "₱" + total;
     }
-  }
-  function multiplication(num1, num2){
-    num1 = document.getElementById("presyo"). value;
-    num2 = document.getElementById("ilan"). value;
-    document.getElementById("total").innerHTML = num1 * num2;
-    total.style.display="block";
-    total.innerHTML = num1 * num2;
-    let sum = param1 * param2;
-    alert(sum);
-
   }
